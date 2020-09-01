@@ -1,0 +1,166 @@
+body {
+  background-image: url("../images/murty.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 20%;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  justify-content: space-between;
+}
+
+.btn-large:nth-child(2) {
+  margin-top: 5%;
+}
+
+.btn-large {
+  background-color: black;
+  margin-bottom:1em;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    background-position:20% 30%;
+  }
+}
+
+
+/*
+=============================
+    PAGE QUESTION 
+==============================
+*/
+.question-container{
+  width:70%;
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+}
+
+.question-card{
+  
+  padding:5% 5%;
+  box-shadow: 10px 10px 5px #5a5959;
+  border-radius:10px;
+  margin:5% 0;
+  background-color: white;
+}
+
+.question-text{
+  font-size:2em;
+}
+.option{
+  padding-left:1em;
+}
+.option-text{
+  font-weight: 500;
+
+}
+
+.option-card{
+  padding-top:20px;
+}
+
+input {
+  display:inline;
+}
+
+
+/*
+=================
+    Result Page
+==================
+*/
+.result-container{
+  width:90%;
+  display:flex;
+  flex-direction: column;
+  margin:auto;
+}
+
+.result-card{
+  overflow: hidden;
+  position: relative;
+  width:100%;
+  margin:auto;
+  margin-top:30vh;
+  box-shadow: 10px 10px 5px #5a5959;
+  border-radius:30px;
+  background-color: white;
+
+  
+}
+
+
+.result-card img{
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    animation: fade 1s alternate infinite;
+}
+
+.result-text{
+  padding: 10px;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    animation: colorChange 1s alternate infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes changeColor{
+  0%{
+    color:black;
+  }
+  100%{
+    color:white;
+  }
+}
+
+/*
+==================
+    Teacher
+===================
+*/
+.teacher-container{
+  width:70%;
+  display:flex;
+  flex-direction:column;
+  margin:auto;
+}
+
+@media only screen and (max-width: 600px){
+  .teacher-container{
+    width:90%;
+  }
+}
+
+.teacher-card{
+  
+  padding:5% 5%;
+  box-shadow: 10px 10px 5px #5a5959;
+  border-radius:10px;
+  margin:5% 0;
+  background-color: white;
+  text-align:center;  
+}
+
+
