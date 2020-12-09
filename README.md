@@ -15,8 +15,21 @@ questions set dynamically by logging in as teacher.
 
 ## Some images of project
 
+### Home Page
 
+![Alt text](./READMEimages/open.png)
 
+### Setting Question(teacher)
+
+![Alt text](./READMEimages/settingquestion.png)
+
+### Answer Page(student)
+
+![Alt text](./READMEimages/answer.png)
+
+### Result Page
+
+![Alt text](./READMEimages/result.png)
 
 # Dev setup
 
